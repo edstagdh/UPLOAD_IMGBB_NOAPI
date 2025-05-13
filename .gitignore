@@ -1,0 +1,36 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# macOS & system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.eggs/
+
+# Environment files
+.env
+.env.*
+*.env
+
+# User Configs
+*.cfg
+Config.json
+
+# User Secret Files
+*.secret
+Secret.json
