@@ -123,13 +123,15 @@ def upload_to_imgbb(headless_mode, imgbb_username, imgbb_password, imgbb_album_i
         direct_links = direct_link_text.strip().split('\n')
         # logger.debug(f"Direct links to the uploaded images in album '{imgbb_album_id}':")
         output_json = {}
+        special_mode = False
         for link in direct_links:
             stripped_link = link.strip()
             file_name = stripped_link.split("/")[-1]
-            file_name = file_name.replace("-", ".")
-            file_name = file_name.replace(".preview.webp", "_preview.webp")
-            file_name = file_name.replace(".preview.sheet.webp", "_preview_sheet.webp")
-            file_name = file_name.replace(".thumbnails.jpg", "_thumbnails.jpg")
+            if special_mode:
+                file_name = file_name.replace("-", ".")
+                file_name = file_name.replace(".preview.webp", "_preview.webp")
+                file_name = file_name.replace(".preview.sheet.webp", "_preview_sheet.webp")
+                file_name = file_name.replace(".thumbnails.jpg", "_thumbnails.jpg")
             output_json[file_name] = stripped_link
             # logger.debug(f"{file_name}: {stripped_link}")
 

@@ -3,5 +3,6 @@
   "allowed_formats": [".jpg", ".png", ".bmp", ".gif", ".tif", ".webp", ".heic", ".avif"],
   "ignored_files": [""],
   "link_export_types": "Direct links",
-  "headless_mode": true
+  "headless_mode": true,
+  "Version": "1.0"
 }
