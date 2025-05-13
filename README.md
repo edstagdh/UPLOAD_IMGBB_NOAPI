@@ -1,6 +1,6 @@
 # UPLOAD_IMGBB_NOAPI
 
-A Python script that automates the process of uploading images to [IMGBB](https://imgbb.com/) using Selenium, eliminating the need to use their API
+A Python script that automates the process of uploading images to [IMGBB](https://imgbb.com/) using Selenium, eliminating the need to use their API.
 <br>
 It is recommended to use on less than 10 files per run.
 
